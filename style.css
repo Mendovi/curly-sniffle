@@ -18,3 +18,8 @@ img {
  top:350px; 
  left:100px;   
 }
+
+.bone {
+  background-color: forestgreen;
+  text-align: center;
+}
