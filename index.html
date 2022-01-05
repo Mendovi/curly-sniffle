@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='ru'>
+<head>
+<title>Зона | КвМЧ</title>
+<meta name="generator" content="КвМЧ" />
+<meta name="developer-contacts" content="admin@kvmch.cat" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<noscript><meta http-equiv="refresh" content="0; URL=/badbrowser.php"></noscript>
+<link media="screen" href="/templates/Default/style/style.css?1641375007" type="text/css" rel="stylesheet" />  
+<script type="text/javascript" src="/getjs?charset=utf-8&g=general&t=12"></script>
+<script type="text/javascript" src="/js/scripts.js?1641375007"></script>
+<link href="/templates/Default/css/blog.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="/templates/Default/css/style.css?1641375007" />
+<link rel="stylesheet" type="text/css" href="/templates/Default/css/engine.css" />
+<link rel="stylesheet" type="text/css" href="/templates/Default/css/layout.css" />
+<link rel="shortcut icon" type="icon" href="/favicon.ico" />
+<script>
+$( document ).ready(function() {
+version_js_cache_1 = '5.2';
+if (typeof version_js_cache !== 'undefined') {
+	if(version_js_cache != version_js_cache_1)
+		$('body').html('<br><br><br><br><center><font size="4">Кэш браузера устарел.<br>Для корректной работы, пожалуйста, отчистите кэш Вашего браузера и перезагрузите страницу.</font></center>'); 
+} else
+	$('body').html('<br><br><br><br><center><font size="4">Кэш браузера устарел.<br>Для корректной работы, пожалуйста, отчистите кэш Вашего браузера и перезагрузите страницу.</font></center>'); 
+});
+</script>
+</head>
+<body>
+<a class="button_top" id="toTop" onclick="$('body,html').animate({scrollTop:0}, 800); return false;">Наверх</a>
+	<div class="page">
+	<div id="NotifyBlock"></div>
+		<div id="front-wrapper">
+		  <div id="front">
+		    <div style="width: 326px;" class="column">
+					<div class="box mainmenu">
+                    <div class="bhead">Меню</div>
+					
+                    <table>
+                        <tr>
+                        <td>
+						<dl>
+						<dt><a href="/">Моя страница</a></dt>
+						</dl>
+						<dl>
+						<dt><a href="/cinc" title="Игровое поле">Игра</a></dt>
+						</dl>
+						<dl>
+						<dt><a href="/messages" title="Личные Сообщения">Сообщения </a></dt>
+						</dl>
+						<dl>
+						<dt><a href="/?go=search" title="Список всех пользователей сайта">Жители Зоны</a></dt>
+						</dl>
+						<dl>
+						<dt><a href="/?go=faction" title="Список всех группировок, стай, объединений Зоны">Группировки</a></dt>
+						</dl>
+						<dl>
+						<dt><a href="/chat" title="Общий чат всех пользователей">Чат</a></dt>
+						</dl>
+						<dl>
+						<dt><a href="/support" title="Помощь по сайту и решение проблем">Поддержка </a></dt>
+						</dl>
+						<dl>
+						<dt><a href="/?act=logout" title="Выйти">Выйти</a></dt>
+						</dl>
+                        </td>    
+                        </tr>
+                 </table>
+                   
+				   
+                  <div class="bfoot"></div>
+                    </div>
+</div>
+			<div class="topline">
+<div align="right">
+<tr>
+<td width="370" height="55" align="center" valign="middle" ></td>
+</tr>
+</div>			
+</div>
+<div id="mask-main" style="width: 925px;" class="mask">
+<div style="width: 925px;" class="mainpart">
+<div style="background:none; width: 925px;" id="content-box" class="box">          
+<div style="background:none; height: 13px;" class="bhead"></div>
+
+<script type="text/javascript" src="/getjs?charset=utf-8&g=game&t=1641375007"></script>
+<link media="screen" href="/templates/Default/css/game_main.css?1641375007" type="text/css" rel="stylesheet" />
+<link media="screen" href="/templates/Default/css/animation.css?1641375007" type="text/css" rel="stylesheet" />
+<script type="text/javascript">
+window.onerror = function(msg) {
+$('#content-box').html('<font size="4" style="position:absolute; margin-top: 64px; margin-left: 64px;">Возникла JavaScript ошибка. Игровое поле не может быть подгружено. Обновите страницу и поробуйте еще раз.<br><br>'+msg+'.</font>');
+Page.Loading('stop');
+}
+$(document).ready(function() {
+Page.Loading('start');
+$('#content-box').css('width', '1080px');
+$('#mask-main').css('width', '1080px');
+$('.mainpart').css('width', '1080px');
+$('#mask-main').css('padding-top', '0px');
+$('.mainpart').css('width', '1080px');
+$('#front').css('width', '1080px');
+$('.topline').remove();
+$('.column').remove();
+$('#front').css('margin', '-7px auto').css('background', 'none');
+mobile_template = 1;
+if(mobile_template == 0){
+$('#game').css('min-width', '1060px').css('position', 'absolute').css('width', '100%');
+$('#game').html($('#game').html()+'<div style="width: 100%; min-width: 1060px; position: relative;" id="caharacter_info_m" class="character_info">'+$('#caharacter_info').html()+'</div>');
+$('#caharacter_info').remove();
+$('a').css('color', '#c58545');
+$('.rad_str_ch').css('top', '70.6%').css('right', '-2%');
+} else {
+$('#content-box').css('width', '1080px');
+}
+chr_id = '6156';
+loc_id = '26';
+setRadInd(0);
+muteVoice_id = '|';
+enableVoiceData = '0';
+background_location42 = '/img/locations/cord_h_pdl.jpg';
+
+const fpPromise = new Promise((resolve, reject) => {
+    const script = document.createElement('script')
+    script.onload = resolve
+    script.onerror = reject
+    script.async = true
+    script.src = '/js/fp.min.js'
+    document.head.appendChild(script)
+  })
+    .then(() => FingerprintJS.load())
+  fpPromise
+    .then(fp => fp.get())
+    .then(result => {
+      const visitorId = result.visitorId
+	  ConnectGameServer(visitorId)
+    })
+});
+</script>
+
+<font id="loadingigpl" style="position:absolute; margin-top: 64px; margin-left: 64px;" size="4"><br>Пожалуйста, подождите, идет загрузка игры...<br>Если игра не загружается долгое время, проверьте Ваше соединение с Интернетом.<br><br></font>
+<noscript><font style="position:absolute; margin-top: 64px; margin-left: 64px;" size="4">Запуск игры невозможен, так как в браузере не поддерживается или выключен JavaScript.<br><br></font></noscript>
+<div style="display: none;" class="gameBlock" id="game">
+<span id="styleCageOpacity"></span>
+<a href="/">Главная</a> | <a target="_blank" href="/chat">Общий чат</a> | <a onclick="$('#cnt_supp_s').hide();$('#cnt_supp').html('');" target="_blank" href="/support">Поддержка <span style="display:none;background-color: white;color: black;font-size: 15px;" id="cnt_supp_s">(<span id="cnt_supp"></span>)</span></a> | <a target="_blank" onclick="$('#cnt_msg_s').hide();$('#cnt_msg').html('');" href="/messages">ЛС <span style="display:none;background-color: white;color: black;font-size: 15px;" id="cnt_msg_s">(<span id="cnt_msg"></span>)</span></a> | <a href="/?act=logout">Выйти с сайта</a>
+<br><br>
+<div id="lochat" style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 2px; color: #2b2b2b; overflow-y: scroll; padding:4px; height: 200px;"><div id="lochat_block"></div></div>
+<br>
+<input type="text" id="message" class="inpst" 	onKeyPress="if(((event.keyCode == 13) || (event.keyCode == 10)) && (event.ctrlKey == false)) sendMessageGame()" maxlength="200" style="width: 88%;height: 17px;" placeholder="Введите Ваше сообщение..."><div class="voice_message_gf" title="Голосовое сообщение" onclick="voiceMessage();"></div><div style="padding: 0px 5px;" class="button_div fl_r"><button onclick="sendMessageGame();" id="msgsend">Сказать!</button></div>
+<small>(<a onclick="clearChatLoc(); return false;" href="#">очистить чат</a>)</small>&nbsp;&nbsp; <div class="voice_enable_dis_gf" onclick="enableVoice();" title="Включить/отключить голосовые сообщения"></div>
+<br><br>
+<font id="info_strtr" size="4"></font>
+<br>
+Локация: <span style="font-weight: bold;" id="nameLocation">Подвал дома&nbsp;<span style="cursor: help;" class="smtitle" data-title="Здесь нельзя войти в боережим. Безопасная локация."><img height="15" width="13" src="/img/no_duel.png"></span></span> | <a id="linkOffLoc" href="/" onclick="offEffectsLocatuion(); return false;">Убрать эффекты</a> | <a href="/" onclick="setMobileGame(1); return false;">Поставить мобильную версию</a><span id="dpActionLoc"></span>
+<span id="time" style="font-size: 13px;"><br><br><span class="smtitle" style="cursor: help;" data-title="24-часовой формат времени">Время: <span id="time_hours">12</span> часов.</span> Температура на улице: <span style="cursor: help;" class="smtitle" data-title="Погода указана конкретно для этой локации">-7°C, <span id="weather_name">ясно.</span></span></span>
+<br><br>
+<div id="personal_style">
+<div style="background: url(/img/locations/cord_h_pdl.jpg) no-repeat; width: 1027px;height: 990px;background-repeat: round;" id="background_location">
+<table id="game_location" style=" position: absolute;width: 1028px;height: 990px;" data-effect="" data-type="" data-mycage="7" data-radiation="0" data-psy="0">
+
+<tbody id="update_game_cages">
+</tbody>
+
+</table>
+</div>
+</div>
+</div>
+<span id="html_location"></span>
+<span id="audio_location"></span>
+<span id="audio_ootl"></span><div style="display:none;" id="caharacter_info" class="character_info">
+
+<table id="character_info" style="padding-left: 15px;">
+
+<tbody>
+
+<tr>
+
+<td style="width: 166px;height: 160px;" id="info_1">
+<font style="position: absolute;" size="4">Жизненные показатели</font>
+<br><br>
+<div id="hear_bar">
+<span id="heart_icon" data-title="Здоровье" class="heart-icon smtitle"></span>
+<div class="progress-bar_new new_progress_bar stripes" onclick="showIndicatorsInfo('heart');">
+    <span id="heart" data-val="100" style="max-width: 100%; width: 100%"></span>
+</div></div>
+<div class="clear"></div>
+<div id="energy_bar">
+<span data-title="Энергия" id="energy_icon" class="energy-icon smtitle"></span>
+<div class="progress-bar_new new_progress_bar stripes" onclick="showIndicatorsInfo('energy');">
+    <span id="energy" data-val="105" style="max-width: 100%; width: 105%"></span>
+</div><a id="plus_energy" style="position: absolute;margin-top: -3%;margin-left: 11.5%;font-size: 18px;" onclick="restoreEnergy(); return false;" title="Восстановить энергию" href="#">+</a></div>
+<div class="clear"></div>
+
+<div id="sleep_bar">
+<span data-title="Сонливость"  id="sleep_icon" class="sleep-icon smtitle"></span>
+<div class="progress-bar_new new_progress_bar_contr stripes" onclick="showIndicatorsInfo('sleep');">
+    <span id="sleep" data-val="29" style="max-width: 100%; width: 29%"></span>
+</div></div>
+<div class="clear"></div>
+
+<div id="hunger_bar">
+<span data-title="Голод"  id="hunger_icon" class="hunger-icon smtitle"></span>
+<div class="progress-bar_new new_progress_bar_contr stripes" onclick="showIndicatorsInfo('hunger');">
+    <span id="hunger" data-val="9" style="max-width: 100%; width: 9%"></span>
+</div></div>
+<div class="clear"></div>
+<div id="thirst_bar">
+<span data-title="Жажда" id="thirst_icon" class="thirst-icon smtitle"></span>
+<div class="progress-bar_new new_progress_bar_contr stripes" onclick="showIndicatorsInfo('thirst');">
+    <span id="thirst" data-val="11" style="max-width: 100%; width: 11%"></span>
+</div></div>
+<div class="clear"></div>
+<div id="toilet_bar">
+<span data-title="Потребности"  id="toilet_icon" class="toilet-icon smtitle"></span>
+<div class="progress-bar_new new_progress_bar_contr stripes" onclick="showIndicatorsInfo('toilet');">
+    <span id="toilet" data-val="0" style="max-width: 100%; width: 0%"></span>
+</div></div>
+<div class="clear"></div>
+<div id="radiation_bar">
+<span data-title="Радиоактивное заражение"  id="radiation_icon" class="radiation-icon smtitle"></span>
+<div class="progress-bar_new new_progress_bar_contr stripes" onclick="showIndicatorsInfo('radiation');">
+    <span id="radiation" data-val="0" style="max-width: 100%; width: 0%"></span>
+</div></div>
+</td>
+
+<td style="width: 252px;height: 160px;" id="info_2">
+<font size="4">Параметры</font><br><br>
+<button onclick="openInventory('6156');">Открыть инвентарь</button>
+<br><br>
+<button onclick="openProgress('2984');">Показать Достижения</button>
+<br><br>
+<button onclick="tasks.showMyTasks();">Показать Задачи</button>
+</td>
+
+<td style="width: 186px;height: 160px;" id="info_3">
+<font size="4">Действия</font>
+<br><br>
+<div id="actions_001">
+<a onclick="goBury(); return false;" href="/">Копать землю</a><br><br>
+<span style="overflow-y: scroll;" id="resultBury"></span>
+<a onclick="goToilet('go'); return false;" href="/">Справить потребности</a><br><br>
+<a id="goStalk" onclick="goStalk(); return false;" href="/">Охотиться на дичь</a><br><br>
+<a id="goSniff" onclick="sniffGo(); return false;" href="/">Вынюхивать дичь</a>
+<span style="display:none;" id="sleep_action"><br><br><a onclick="sleep(); return false;" href="/">Поспать</a></span>
+<span id="actSArtefacts" style="display: none;"><br><br><a onclick="goSArtefacts(); return false;" href="/">Искать артефакты</a></span><br><br>
+<a id="LinkDuelMode" href="#" onclick="duelMode(); return false;">Перейти в боевой режим</a><br><br>
+<a href="#" onclick="openJournal(); return false;">Почитать мой журнал</a>
+<span style="display:none;" id="waterLoc"><br><br><a href="#" onclick="changeWaterLoc(); return false;">Попить воды</a></span>
+</div>
+</td>
+
+<td style="width: 242px;" id="info_4">
+<font id="data_pers_title" size="4">Данные персонажа</font><br><br>
+<div id="data_pers_table">
+Мой персонаж:<br>Джесс
+<br><br>
+Уровень: <span id="level_spn">2</span>
+<br>
+Опыт: 0/8
+<br><br>
+Монетки: <span id="cost_my_f">38</span>
+<br><br>
+Охотничьи возможности: <span class="smtitle" id="stlk_lvl" data-title="На день"><a style="cursor: help;">3</a></span>/<span class="smtitle" data-title="Использовано"><a style="cursor: help;" id="stlk_cnt">3</a></span>
+ 
+<span id="protection_data">  </span>
+</div>
+<div id="duelMode"></div>
+</td>
+
+<td id="info_5">
+<font size="4">Индикаторы</font><br><br>
+<div class="rad_ch smtitle" id="geiger_sc" data-signal="0" data-title="Излучение 0 Ед" onclick="openNotifeGameInfo('Радиоактивное '+$('#geiger_sc').attr('data-title'))"><span class="rad_str_ch"></span></div>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+<script>$(document).ready(function() {indicatorAlter('energy', 'set', '105');
+					indicatorAlter('heart', 'set', '100');
+					indicatorAlter('toilet', 'set', '0');
+					indicatorAlter('radiation', 'set', '0');
+					indicatorAlter('sleep', 'set', '29');});</script>
+
+<div style="background: none;" class="bfoot"></div>
+</div>
+</div>
+	<div class="clear"></div>
+	</div>
+<div class="page-footer2">
+	<div class="footer2">
+<div id="footer" class="wwide">
+	<div class="wrapper"><div>
+		<span class="copyright">
+			Copyright &copy; 2018 - 2021
+<u><a target="_blank" href="https://vk.com/kvmch">Команда КвМЧ</a></u>. <u><a target="_blank" href="/news">Важные новости</a></u> | <u><a target="_blank" href="/?go=info&act=terms">Правила сайта</a></u> | <u><a href="/?ver=m">Поставить мобильную версию</a></u>
+<br>
+		</span>
+		 
+	</div></div>
+</div>
+</div>
+</div></div> 
+</div>
+</body>
+</html>
