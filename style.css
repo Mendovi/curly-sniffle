@@ -1,0 +1,9 @@
+div {
+ background-image: url(https://www.culture.ru/storage/images/ac91bd3e89d88d3eab1bde8ede88e75d/5d1b0d3c672be462348640e3a3489ebc.jpeg); 
+}
+
+img {
+ position:absolute; 
+ top:300px; 
+ left:100px;
+}
