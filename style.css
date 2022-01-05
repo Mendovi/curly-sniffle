@@ -3,10 +3,11 @@ div {
 }
 
 input {
-    background-color: #4CAF50;
+    background-color: aqua;
     wigth: 60px;
     height: 60px;
     text-align: center;
+    padding-top: 100px;
 }
 
 img {
