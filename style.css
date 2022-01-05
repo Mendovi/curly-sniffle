@@ -2,6 +2,11 @@ div {
 
 }
 
+button {
+    background-color: #4CAF50;
+    wigth: 34px;
+}
+
 img {
  position:absolute; 
  top:300px; 
