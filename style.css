@@ -20,7 +20,7 @@ img {
 }
 
 .bone {
-  background-color: forestgreen;
+  background-color: blue;
   text-align: center;
 }
 
@@ -56,4 +56,9 @@ span {
   top: 1000000px;
   left: 1000000000px;
   width: 50px;	
+}
+
+.cam {
+  background-color: forestgreen;
+  text-align: center;	
 }
