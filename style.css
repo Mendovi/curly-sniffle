@@ -9,13 +9,13 @@ input {
 
 img {
  position:absolute; 
- top:300px; 
+ top:400px; 
  left:100px;
 }
 
 .two {
  position:absolute; 
- top:350px; 
+ top:500px; 
  left:100px;   
 }
 
@@ -34,9 +34,9 @@ img {
 
 h3 {
 	font-size: 30px;
-	color: #000;
+	color: white;
 	padding-left: 10px;
-	line-height: 59px;
+	line-height: 30px;
 }
 span {
 	display: inline;
