@@ -64,8 +64,36 @@ socket.send(document.getElementById("caat").style.top);
 
 
 
+function cam_down () {x = 0;
+x = document.getElementById("caat").offsetTop;
+xn = x + 50;
+document.getElementById("caat").style.top = xn+"px"
+socket.send(document.getElementById("caat").style.top);
+}
+function cam_up () {
+x = 0;
+x = document.getElementById("caat").offsetTop;
+xn = x - 50;
+document.getElementById("caat").style.top = xn+"px"
+socket.send(document.getElementById("caat").style.top);
+}
+function cam_left () {
+x = 0;
+x = document.getElementById("caat").offsetLeft;
+xn = x - 50;
+document.getElementById("caat").style.left = xn+"px"
+socket.send(document.getElementById("caat").style.top);
+}
+function cam_right () {
+x = 0;
+x = document.getElementById("caat").offsetLeft;
+xn = x + 50;
+document.getElementById("caat").style.left = xn+"px"
+socket.send(document.getElementById("caat").style.top);
+}
+
+
 
 function viewDiv(){
   document.getElementById("div1").style.display = "block";
-  document.getElementById("div1").style.display = "none";
 };
