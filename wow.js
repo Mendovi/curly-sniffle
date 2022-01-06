@@ -1,7 +1,5 @@
 let socket = new WebSocket("wss://mendovi.github.io/curly-sniffle/");
-function viewDiv(){
-  document.getElementById("div1").style.display = "block";
-};
+
 
 
 
@@ -67,3 +65,6 @@ socket.send(document.getElementById("caat").style.top);
 
 
 
+function viewDiv(){
+  document.getElementById("div1").style.display = "block";
+};
