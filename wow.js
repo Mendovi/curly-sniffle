@@ -1,4 +1,10 @@
 let socket = new WebSocket("wss://mendovi.github.io/curly-sniffle/");
+function viewDiv(){
+  document.getElementById("div1").style.display = "block";
+};
+
+
+
 
 
 function car_down () {x = 0;
@@ -57,3 +63,7 @@ xn = x + 50;
 document.getElementById("caat").style.left = xn+"px"
 socket.send(document.getElementById("caat").style.top);
 }
+
+
+
+
