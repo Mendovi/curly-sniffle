@@ -62,3 +62,9 @@ span {
   background-color: forestgreen;
   text-align: center;	
 }
+
+.wont {
+   position:absolute; 
+  top:700px; 
+  left:100px;
+}
