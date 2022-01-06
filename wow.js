@@ -65,30 +65,30 @@ socket.send(document.getElementById("caat").style.top);
 
 
 function cam_down () {x = 0;
-x = document.getElementById("caat").offsetTop;
+x = document.getElementById("cav").offsetTop;
 xn = x + 50;
-document.getElementById("caat").style.top = xn+"px"
-socket.send(document.getElementById("caat").style.top);
+document.getElementById("cav").style.top = xn+"px"
+socket.send(document.getElementById("cav").style.top);
 }
 function cam_up () {
 x = 0;
-x = document.getElementById("caat").offsetTop;
+x = document.getElementById("cav").offsetTop;
 xn = x - 50;
-document.getElementById("caat").style.top = xn+"px"
-socket.send(document.getElementById("caat").style.top);
+document.getElementById("cav").style.top = xn+"px"
+socket.send(document.getElementById("cav").style.top);
 }
 function cam_left () {
 x = 0;
-x = document.getElementById("caat").offsetLeft;
+x = document.getElementById("cav").offsetLeft;
 xn = x - 50;
-document.getElementById("caat").style.left = xn+"px"
-socket.send(document.getElementById("caat").style.top);
+document.getElementById("cav").style.left = xn+"px"
+socket.send(document.getElementById("cav").style.top);
 }
 function cam_right () {
 x = 0;
-x = document.getElementById("caat").offsetLeft;
+x = document.getElementById("cav").offsetLeft;
 xn = x + 50;
-document.getElementById("caat").style.left = xn+"px"
+document.getElementById("cav").style.left = xn+"px"
 socket.send(document.getElementById("caat").style.top);
 }
 
