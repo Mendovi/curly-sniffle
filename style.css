@@ -26,11 +26,10 @@ img {
 
 #img1 {
    position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 100px;
+  left: 100px;
   width: 100px;
   height: 100px;
-  background-color: #000000;
 }
 
 .title {
