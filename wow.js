@@ -63,34 +63,6 @@ socket.send(document.getElementById("caat").style.top);
 	
 
 
-var curPosX = 0;
-var curPosY = 0;
-var interval;
-var n = 50; // На сколько двигать за раз
-var width = document.documentElement.clientWidth; // Ширина экрана
-var height = document.documentElement.clientHeight; // Высота экрана
-var imgWidth = 100; // Ширина картинки
-var imgHeight = 100; // Высота картинки
-var img1 = document.getElementById("img1");
-
-function move() {
-  img1.style.left = (curPosX += n) + "px";
-  img1.style.top = (curPosY += n) + "px";
-  if ((curPosX == (width - imgWidth)) || (curPosY == (height - imgHeight))) {
-    clearInterval(interval);
-  }
-}
-interval = setInterval(move, 100);
-
-        var i=0;
-        var image=document.getElementById("caat");
-        Без названия.png, f68ff22b3f7914c2.png //Добавьте свои картинки в массив через запятую
-        var imgs=new Array('img1.jpg','img2.jpg');
-        function imgsrc() {
-            i++;i%=imgs.length;
-            image.src = imgs[i];
-        }
-
 
 function countFunc(count) {
   var btnPlus = count.querySelector('.js-plus-btn');
