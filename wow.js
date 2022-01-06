@@ -64,7 +64,7 @@ socket.send(document.getElementById("caat").style.top);
 
 
 
-function countFunc(count) {
+/*function countFunc(count) {
   var btnPlus = count.querySelector('.js-plus-btn');
   var btnMinus = count.querySelector('.js-minus-btn');
   var field = count.querySelector('.js-number');
