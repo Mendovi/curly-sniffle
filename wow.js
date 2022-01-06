@@ -28,6 +28,8 @@ xn = x + 50;
 document.getElementById("moto").style.left = xn+"px"
 socket.send(document.getElementById("moto").style.left);
 }
+
+
 function cat_down () {x = 0;
 x = document.getElementById("caat").offsetTop;
 xn = x + 50;
