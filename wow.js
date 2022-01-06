@@ -92,8 +92,14 @@ interval = setInterval(move, 100);
         }
 
 
-$(".plus").click(function() {
-  var $price = $(".singleInfo__price");
-  $price.val(parseInt($price.val()) + 1);
-  $price.change();
-});
+<div class="wrapper">
+  <button class="js-plus-btn" type="button">+</button>
+  <input id="number-diet" class="js-number" type="number" name="number" value="1" min="1">
+  <button class="js-minus-btn" type="button">-</button>
+</div>
+<div class="wrapper">
+  <button class="js-plus-btn" type="button">+</button>
+  <input id="number-diet" class="js-number" type="number" name="number" value="1" min="1">
+  <button class="js-minus-btn" type="button">-</button>
+</div>
+
