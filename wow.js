@@ -67,4 +67,5 @@ socket.send(document.getElementById("caat").style.top);
 
 function viewDiv(){
   document.getElementById("div1").style.display = "block";
+  document.getElementById("div1").style.display = "none";
 };
