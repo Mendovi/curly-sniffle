@@ -84,7 +84,7 @@ interval = setInterval(move, 100);
 
         var i=0;
         var image=document.getElementById("image");
-        https://i.ibb.co/4NCWgZ3/image.png, https://i.ibb.co/SRwccBM/f68ff22b3f7914c2.png// Добавьте свои картинки в массив через запятую
+        Без названия.png, f68ff22b3f7914c2.png //Добавьте свои картинки в массив через запятую
         var imgs=new Array('img1.jpg','img2.jpg');
         function imgsrc() {
             i++;i%=imgs.length;
