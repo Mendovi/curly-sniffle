@@ -90,3 +90,10 @@ interval = setInterval(move, 100);
             i++;i%=imgs.length;
             image.src = imgs[i];
         }
+
+
+$(".plus").click(function() {
+  var $price = $(".singleInfo__price");
+  $price.val(parseInt($price.val()) + 1);
+  $price.change();
+});
