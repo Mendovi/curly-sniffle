@@ -92,14 +92,25 @@ interval = setInterval(move, 100);
         }
 
 
-<div class="wrapper">
-  <button class="js-plus-btn" type="button">+</button>
-  <input id="number-diet" class="js-number" type="number" name="number" value="1" min="1">
-  <button class="js-minus-btn" type="button">-</button>
-</div>
-<div class="wrapper">
-  <button class="js-plus-btn" type="button">+</button>
-  <input id="number-diet" class="js-number" type="number" name="number" value="1" min="1">
-  <button class="js-minus-btn" type="button">-</button>
-</div>
+function countFunc(count) {
+  var btnPlus = count.querySelector('.js-plus-btn');
+  var btnMinus = count.querySelector('.js-minus-btn');
+  var field = count.querySelector('.js-number');
+  var fieldValue = parseFloat(field.value, 10);
 
+  btnMinus.addEventListener('click', function() {
+    if (fieldValue > 1) {
+      fieldValue--;
+      field.value = fieldValue;
+    } else {
+      return 1;
+    }
+  });
+  btnPlus.addEventListener('click', function() {
+    fieldValue++;
+    field.value = fieldValue;
+  });
+
+}
+var counts = document.querySelectorAll('.wrapper');
+counts.forEach(countFunc);
